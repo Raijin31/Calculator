@@ -1,0 +1,81 @@
+using System;
+
+namespace Calculator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var result = 0;
+            Console.WriteLine("Choices = x,+,-,/,C");
+            Console.WriteLine("Enter you Choice");
+            string Choice = Console.ReadLine();
+            while(Choice != "C")
+            {
+                if (Choice == "+")
+                {
+                    Console.WriteLine("Enter a number");
+                    int num1 = 0;
+                    num1 = Convert.ToInt32( Console.ReadLine());
+                    Console.WriteLine("Enter a number");
+                    int num2 = 0;
+                    num2 = Convert.ToInt32 (Console.ReadLine());
+                    result = Convert.ToInt32(num1 + num2);
+                    Console.WriteLine(result);
+                    Console.WriteLine("Choices = x,+,-,/,C");
+                    Console.WriteLine("Enter you Choice");
+                    Choice = Console.ReadLine();
+                }
+                else if (Choice == "x")
+                {
+                    Console.WriteLine("Enter a number");
+                    int num1 = 0;
+                    num1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter a number");
+                    int num2 = 0;
+                    num2 = Convert.ToInt32(Console.ReadLine());
+                    result = Convert.ToInt32(num1 * num2);
+                    Console.WriteLine(result);
+                    Console.WriteLine("Choices = x,+,-,/,C");
+                    Console.WriteLine("Enter you Choice");
+                    Choice = Console.ReadLine();
+                }
+                else if (Choice == "-")
+                {
+                    Console.WriteLine("Enter a number");
+                    int num1 = 0;
+                    num1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter a number");
+                    int num2 = 0;
+                    num2 = Convert.ToInt32(Console.ReadLine());
+                    result = Convert.ToInt32(num1 - num2);
+                    Console.WriteLine(result);
+                    Console.WriteLine("Choices = x,+,-,/,C");
+                    Console.WriteLine("Enter you Choice");
+                    Choice = Console.ReadLine();
+                }
+                else if (Choice == "/")
+                {
+                    Console.WriteLine("Enter a number");
+                    double num1 = 0;
+                    num1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter a number");
+                    double num2 = 0;
+                    num2 = Convert.ToInt32(Console.ReadLine());
+                    result = Convert.ToInt32(num1 / num2);
+                    Console.WriteLine(result);
+                    Console.WriteLine("Choices = x,+,-,/,C");
+                    Console.WriteLine("Enter you Choice");
+                    Choice = Console.ReadLine();
+                }
+                else if(Choice == "C")
+                {
+                    return;
+                }
+
+
+
+            }
+        }
+    }
+}
